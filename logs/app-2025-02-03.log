@@ -1,0 +1,11 @@
+[2025-02-02T21:19:05.872Z] 🚀 Lunark AI running on port 4545
+[2025-02-02T21:19:23.378Z] transfer {"to":"ashe","amount":"1","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}
+[2025-02-02T21:19:26.665Z] transfer {"to":"john","amount":"1","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}
+[2025-02-02T21:27:20.949Z] 🚀 Lunark AI running on port 4545
+[2025-02-02T21:27:36.405Z] transfer {"to":"john","amount":"1","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}
+[2025-02-02T21:28:16.839Z] transfer {"userName":"ashe","amount":"1","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}
+[2025-02-02T21:29:35.180Z] transfer {"to":"0xCCAc86919C37b8a04C3Bea296Ae2bB0bFC29E39A","amount":"1","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}
+[2025-02-02T21:30:51.640Z] transfer {"to":"0xCCAc86919C37b8a04C3Bea296Ae2bB0bFC29E39A","amount":"1","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}
+[2025-02-02T21:30:53.184Z] transfer {"to":"0xCCAc86919C37b8a04C3Bea296Ae2bB0bFC29E39A","amount":"1","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}
+[2025-02-02T21:33:00.084Z] 🚀 Lunark AI running on port 4545
+[2025-02-02T23:22:56.690Z] 🚀 Lunark AI running on port 4545

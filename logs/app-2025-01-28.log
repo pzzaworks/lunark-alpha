@@ -1,0 +1,9 @@
+[2025-01-27T21:11:43.000Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T22:02:34.315Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T22:04:53.144Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T22:05:15.429Z] intentCostBreakdown {"type":"intent","promptTokens":1,"completionTokens":4,"cost":0.00500255}
+[2025-01-27T22:08:29.229Z] intentCostBreakdown {"type":"intent","promptTokens":1,"completionTokens":28,"cost":0.00501695}
+[2025-01-27T22:10:43.425Z] intentCostBreakdown {"type":"intent","promptTokens":2,"completionTokens":12,"cost":0.0050075}
+[2025-01-27T22:14:08.051Z] intentCostBreakdown {"type":"intent","promptTokens":1,"completionTokens":4,"cost":0.00500255}
+[2025-01-27T23:12:09.266Z] intentCostBreakdown {"type":"intent","promptTokens":1,"completionTokens":8,"cost":0.00500495}
+[2025-01-28T10:50:23.331Z] 🚀 Lunark AI running on port 4545

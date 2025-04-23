@@ -1,0 +1,301 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/infrastructure/database/prisma-client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                    String        @id @default(uuid())
+  address               String        @unique
+  createdAt             DateTime      @default(now())
+  updatedAt             DateTime      @updatedAt
+  balance               Float         @default(0)
+  nonce                 String        @default(uuid())
+  role                  String        @default("user")
+  sessionToken          String?       @unique
+  sessionTokenExpiresAt DateTime?
+  termsSignature        String?
+  termsSignedAt         DateTime?
+  deletedAt             DateTime?
+  chats                 Chat[]
+  memories              Memory[]
+  messages              Message[]
+  payments              Payment[]
+  tasks                 Task[]
+  transactions          Transaction[]
+  usages                Usage[]
+  settings              UserSettings?
+  contacts              Contact[]
+
+  @@unique([address, deletedAt])
+}
+
+model UserSettings {
+  id          String    @id @default(cuid())
+  userId      String    @unique
+  llmModel    String    @default("openai/gpt-4o-mini")
+  temperature Float     @default(0.3)
+  maxTokens   Int       @default(3600)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  deletedAt   DateTime?
+  user        User      @relation(fields: [userId], references: [id])
+}
+
+model Chat {
+  id        String     @id @default(uuid())
+  userId    String
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  title     String
+  tools     String     @default("")
+  deletedAt DateTime?
+  user      User       @relation(fields: [userId], references: [id])
+  memories  Memory[]
+  messages  Message[]
+  tasks     Task[]
+  usages    Usage[]
+  documents Document[]
+}
+
+model Message {
+  id            String       @id @default(uuid())
+  content       String
+  chatId        String
+  createdAt     DateTime     @default(now())
+  role          String       @default("user")
+  updatedAt     DateTime     @updatedAt
+  userId        String
+  toolData      String?
+  cost          Float        @default(0)
+  costBreakdown String?
+  deletedAt     DateTime?
+  chat          Chat         @relation(fields: [chatId], references: [id])
+  user          User         @relation(fields: [userId], references: [id])
+  transaction   Transaction?
+  usage         Usage?
+  memories      Memory[]     @relation("MessageMemories")
+
+  @@index([chatId])
+  @@index([userId])
+}
+
+model Transaction {
+  id        String    @id @default(uuid())
+  messageId String    @unique
+  data      String
+  hash      String?   @unique
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  status    String    @default("PENDING")
+  type      String    @default("TRANSFER")
+  userId    String
+  chainId   Int
+  deletedAt DateTime?
+  message   Message   @relation(fields: [messageId], references: [id])
+  user      User      @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+}
+
+model Document {
+  id        String    @id @default(cuid())
+  content   String
+  sections  String
+  metadata  String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  chatId    String
+  deletedAt DateTime?
+  chat      Chat      @relation(fields: [chatId], references: [id])
+
+  @@index([chatId])
+  @@map("documents")
+}
+
+model Task {
+  id          String    @id @default(cuid())
+  title       String
+  description String
+  createdBy   String
+  status      String
+  priority    Int       @default(1)
+  graphId     String?
+  deadline    DateTime?
+  metadata    String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  chatId      String
+  deletedAt   DateTime?
+  chat        Chat      @relation(fields: [chatId], references: [id])
+  user        User      @relation(fields: [createdBy], references: [id])
+  graph       Graph?    @relation(fields: [graphId], references: [id])
+
+  @@index([chatId])
+}
+
+model Memory {
+  id         String    @id @default(uuid())
+  content    String
+  type       String
+  importance Float     @default(0)
+  timestamp  DateTime  @default(now())
+  chatId     String?
+  metadata   String?
+  userId     String
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  deletedAt  DateTime?
+  chat       Chat?     @relation(fields: [chatId], references: [id])
+  user       User      @relation(fields: [userId], references: [id])
+  messages   Message[] @relation("MessageMemories")
+
+  @@index([userId])
+  @@index([chatId])
+}
+
+model Node {
+  id          String    @id @default(uuid())
+  type        String
+  data        String
+  metadata    String?
+  graphId     String
+  status      String    @default("PENDING")
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  deletedAt   DateTime?
+  edges       Edge[]    @relation("EdgeSource")
+  targetEdges Edge[]    @relation("EdgeTarget")
+  graph       Graph     @relation(fields: [graphId], references: [id])
+}
+
+model Edge {
+  id        String    @id @default(uuid())
+  type      String
+  sourceId  String
+  targetId  String
+  metadata  String?
+  graphId   String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+  graph     Graph     @relation(fields: [graphId], references: [id])
+  source    Node      @relation("EdgeSource", fields: [sourceId], references: [id])
+  target    Node      @relation("EdgeTarget", fields: [targetId], references: [id])
+}
+
+model Graph {
+  id        String    @id @default(uuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  metadata  String?
+  status    String    @default("ACTIVE")
+  deletedAt DateTime?
+  edges     Edge[]
+  nodes     Node[]
+  tasks     Task[]
+}
+
+model Usage {
+  id               String    @id @default(cuid())
+  userId           String
+  chatId           String
+  promptTokens     Int       @default(0)
+  completionTokens Int       @default(0)
+  totalTokens      Int       @default(0)
+  totalCost        Float     @default(0)
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+  messageId        String    @unique
+  toolCost         Float     @default(0)
+  deletedAt        DateTime?
+  chat             Chat      @relation(fields: [chatId], references: [id])
+  message          Message   @relation(fields: [messageId], references: [id])
+  user             User      @relation(fields: [userId], references: [id])
+
+  @@unique([userId, chatId])
+  @@unique([userId, chatId, messageId])
+  @@index([userId])
+  @@index([chatId])
+}
+
+model Payment {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  sessionId String    @unique
+  txHash    String    @unique
+  amount    Float
+  userId    String
+  deletedAt DateTime?
+  user      User      @relation(fields: [userId], references: [id])
+}
+
+model Token {
+  id          String             @id @default(cuid())
+  symbol      String
+  name        String
+  commonNames String[]
+  logoURI     String?
+  createdAt   DateTime           @default(now())
+  updatedAt   DateTime           @updatedAt
+  deletedAt   DateTime?
+  deployments TokenDeployment[]
+  toolSupport TokenToolSupport[]
+
+  @@unique([symbol, name])
+}
+
+model TokenDeployment {
+  id          String             @id @default(cuid())
+  address     String
+  chainId     Int
+  decimals    Int
+  isNative    Boolean            @default(false)
+  createdAt   DateTime           @default(now())
+  updatedAt   DateTime           @updatedAt
+  tokenId     String
+  deletedAt   DateTime?
+  token       Token              @relation(fields: [tokenId], references: [id])
+  toolSupport TokenToolSupport[]
+
+  @@unique([address, chainId])
+}
+
+model TokenToolSupport {
+  id           String           @id @default(cuid())
+  isEnabled    Boolean          @default(true)
+  minAmount    String?
+  maxAmount    String?
+  createdAt    DateTime         @default(now())
+  updatedAt    DateTime         @updatedAt
+  tokenId      String?
+  deploymentId String?
+  params       Json?
+  toolName     String
+  deletedAt    DateTime?
+  deployment   TokenDeployment? @relation(fields: [deploymentId], references: [id])
+  token        Token?           @relation(fields: [tokenId], references: [id])
+
+  @@unique([toolName, deploymentId])
+}
+
+model Contact {
+  id        String    @id @default(uuid())
+  userId    String
+  name      String
+  address   String
+  notes     String?
+  networks  String[]  @default([])
+  metadata  String?   @default("{}")
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+  user      User      @relation(fields: [userId], references: [id])
+
+  @@unique([userId, name, deletedAt])
+  @@index([userId])
+}

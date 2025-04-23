@@ -1,0 +1,33 @@
+[2025-02-01T21:38:32.774Z] 🚀 Lunark AI running on port 4545
+[2025-02-01T21:40:36.129Z] 🚀 Lunark AI running on port 4545
+[2025-02-01T21:42:01.880Z] 🚀 Lunark AI running on port 4545
+[2025-02-01T21:42:33.189Z] Transfer {"to":"0xCCAc86919C37b8a04C3Bea296Ae2bB0bFC29E39A","amount":"5","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT"}
+[2025-02-01T21:43:32.593Z] Transfer {"to":"ashe","amount":"5","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenAddress":"0xdac17f958d2ee523a2206206994597c13d831ec7","tokenSymbol":"USDT"}
+[2025-02-01T22:41:21.820Z] 🚀 Lunark AI running on port 4545
+[2025-02-01T22:50:49.655Z] 🚀 Lunark AI running on port 4545
+[2025-02-01T22:52:06.742Z] 🚀 Lunark AI running on port 4545
+[2025-02-01T22:52:20.968Z] transfer {"userName":"ashe","amount":"5","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT"}
+[2025-02-01T22:58:22.313Z] 🚀 Lunark AI running on port 4545
+[2025-02-01T22:58:38.527Z] transfer {"userName":"ashe","amount":"5","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}
+[2025-02-01T22:59:21.451Z] transfer {"userName":"ashe","amount":"5","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}
+[2025-02-01T23:50:21.809Z] transfer {"userName":"ashe","amount":"5","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}
+[2025-02-01T23:50:22.093Z] transfer {"userName":"ashe","amount":"5","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}
+[2025-02-02T00:00:52.591Z] 🚀 Lunark AI running on port 4545
+[2025-02-02T00:15:03.278Z] 🚀 Lunark AI running on port 4545
+[2025-02-02T00:20:31.669Z] 🚀 Lunark AI running on port 4545
+[2025-02-02T00:41:07.161Z] 🚀 Lunark AI running on port 4545
+[2025-02-02T00:51:23.489Z] 🚀 Lunark AI running on port 4545
+[2025-02-02T00:57:26.720Z] Error updating contact: {}
+[2025-02-02T01:04:18.901Z] 🚀 Lunark AI running on port 4545
+[2025-02-02T01:14:08.472Z] 🚀 Lunark AI running on port 4545
+[2025-02-02T01:21:50.936Z] 🚀 Lunark AI running on port 4545
+[2025-02-02T01:28:13.750Z] 🚀 Lunark AI running on port 4545
+[2025-02-02T20:07:02.430Z] 🚀 Lunark AI running on port 4545
+[2025-02-02T20:32:05.634Z] 🚀 Lunark AI running on port 4545
+[2025-02-02T20:32:23.579Z] transfer {"userName":"ashe","amount":"1","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}
+[2025-02-02T20:32:25.543Z] transfer {"userName":"john","amount":"1","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}
+[2025-02-02T20:37:17.990Z] transfer {"userName":"ashe","amount":"1","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}
+[2025-02-02T20:37:20.139Z] transfer {"userName":"john","amount":"1","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}
+[2025-02-02T20:54:00.847Z] 🚀 Lunark AI running on port 4545
+[2025-02-02T20:54:17.631Z] transfer {"to":"ashe","amount":"1","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}
+[2025-02-02T20:54:19.547Z] transfer {"to":"john","amount":"1","chainId":42161,"from":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0","tokenSymbol":"USDT","context":{"userId":"662b0e2f-4f6f-47ed-a9ff-7733be5a912a","userAddress":"0x63c9A56a41dc34e41EB94D48ADA6dFAcfd5E8af0"}}

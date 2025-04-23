@@ -1,0 +1,12 @@
+-- AlterTable
+ALTER TABLE "Document" ALTER COLUMN "metadata" SET DATA TYPE TEXT;
+
+-- AlterTable
+ALTER TABLE "Edge" ALTER COLUMN "metadata" SET DATA TYPE TEXT;
+
+-- AlterTable
+ALTER TABLE "Graph" ALTER COLUMN "nodes" SET DATA TYPE TEXT[],
+ALTER COLUMN "edges" SET DATA TYPE TEXT[];
+
+-- AlterTable
+ALTER TABLE "Node" ALTER COLUMN "metadata" SET DATA TYPE TEXT;

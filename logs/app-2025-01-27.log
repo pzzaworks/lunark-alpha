@@ -1,0 +1,79 @@
+[2025-01-26T22:46:12.183Z] 🚀 Lunark AI running on port 4545
+[2025-01-26T22:50:41.935Z] 🚀 Lunark AI running on port 4545
+[2025-01-26T22:59:40.086Z] 🚀 Lunark AI running on port 4545
+[2025-01-26T22:59:43.751Z] ❌ Error: {"status":500,"message":"Route /favicon.ico not found","stack":"Error: Route /favicon.ico not found\n    at /Users/pzzaworks/Projects/lunarkaiorg/lunarkai/dist/src/infrastructure/http/server.js:59:23\n    at Layer.handle [as handle_request] (/Users/pzzaworks/Projects/lunarkaiorg/lunarkai/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/Users/pzzaworks/Projects/lunarkaiorg/lunarkai/node_modules/express/lib/router/index.js:328:13)\n    at /Users/pzzaworks/Projects/lunarkaiorg/lunarkai/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/Users/pzzaworks/Projects/lunarkaiorg/lunarkai/node_modules/express/lib/router/index.js:346:12)\n    at next (/Users/pzzaworks/Projects/lunarkaiorg/lunarkai/node_modules/express/lib/router/index.js:280:10)\n    at securityHeaders (/Users/pzzaworks/Projects/lunarkaiorg/lunarkai/dist/src/infrastructure/http/server.js:40:5)\n    at Layer.handle [as handle_request] (/Users/pzzaworks/Projects/lunarkaiorg/lunarkai/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/Users/pzzaworks/Projects/lunarkaiorg/lunarkai/node_modules/express/lib/router/index.js:328:13)\n    at /Users/pzzaworks/Projects/lunarkaiorg/lunarkai/node_modules/express/lib/router/index.js:286:9"}
+[2025-01-27T11:34:41.274Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T11:35:49.748Z] ❌ Fatal unhandled rejection: {"name":"IntentError","code":"RECOGNITION_FAILED"}
+[2025-01-27T11:54:49.285Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T11:55:00.910Z] ❌ Fatal unhandled rejection: {"name":"IntentError","code":"RECOGNITION_FAILED"}
+[2025-01-27T11:55:47.427Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T11:55:55.596Z] ❌ Fatal unhandled rejection: {"name":"IntentError","code":"RECOGNITION_FAILED"}
+[2025-01-27T11:56:53.764Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T11:57:05.113Z] systemPrompt "You are Lunark, an AI assistant and agent that recognizes user intents for blockchain operations. Your task is to analyze user messages and identify which blockchain tools are needed for their requests.\n\n                        Your response should be a simple text listing the required tools if there are any.\n\n                        Example response formats:\n                        \"Required tools sequence:\n                        1. get_balance - Check wallet balance\n                        2. resolve_token - Get token details\"\n\n                        Previously used tools in this chat:\n                        \n\n                        Available Tools:\n                        - approve_erc20: \"approve_erc20\": Creates an ERC20 token approval transaction.\n- get_balance: \"get_balance\": Gets the balance of a token (native or ERC20) for an address.\n- is_native_token: \"is_native_token\": Determines if a token symbol represents a native token (like ETH, BNB, MATIC) or an ERC20 token.\n- resolve_token: \"resolve_token\": Resolve a token symbol to get its deployment information across different chains.\n- store_memory: \"store_memory\": Store crucial user information or explicitly requested memories. Use for:\n    1. User preferences and settings\n    2. Important personal information shared by user\n    3. Information user explicitly asks to remember\n- switch_network: \"switch_network\": Switches the connected wallet to the specified network. Use when token or operation is not available on current network.\n- transfer: \"transfer\": Creates a token transfer transaction (works for both native and ERC20 tokens).\n- list_tools: \"list_tools\": Lists all available tools with their names and descriptions to help users understand what commands they can use.\n\n                        Chat Summary:\n                        "
+[2025-01-27T11:57:07.287Z] ❌ Fatal unhandled rejection: {"name":"IntentError","code":"RECOGNITION_FAILED"}
+[2025-01-27T11:58:12.675Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T12:04:36.009Z] intentCostBreakdown {"type":"intent","promptTokens":1,"completionTokens":4,"cost":0.00500255}
+[2025-01-27T12:04:36.501Z] error {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"5.22.0","meta":{"modelName":"Usage","target":["userId","chatId"]}}
+[2025-01-27T12:04:37.188Z] ❌ Fatal unhandled rejection: {"name":"IntentError","code":"RECOGNITION_FAILED"}
+[2025-01-27T12:18:38.883Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T12:18:47.288Z] intentCostBreakdown {"type":"intent","promptTokens":1,"completionTokens":8,"cost":0.00500495}
+[2025-01-27T12:18:47.763Z] info "Usage already recorded, continuing with intent recognition"
+[2025-01-27T12:38:09.909Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T12:38:25.785Z] ❌ Fatal unhandled rejection: {"name":"IntentError","code":"RECOGNITION_FAILED"}
+[2025-01-27T12:38:43.330Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T12:39:14.359Z] ❌ Fatal unhandled rejection: {"name":"IntentError","code":"RECOGNITION_FAILED"}
+[2025-01-27T13:04:02.321Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T13:10:09.797Z] error "Intent recognition error: 401 Incorrect API key provided: sk-or-v1*************************************************************d732. You can find your API key at https://platform.openai.com/account/api-keys."
+[2025-01-27T13:10:10.495Z] ❌ Fatal unhandled rejection: {"name":"IntentError","code":"RECOGNITION_FAILED"}
+[2025-01-27T13:15:11.365Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T13:15:22.736Z] intentCostBreakdown {"type":"intent","promptTokens":1,"completionTokens":28,"cost":0.00501695}
+[2025-01-27T13:15:23.216Z] error "Intent recognition error: \nInvalid `prisma_1.default.usage.upsert()` invocation in\n/Users/pzzaworks/Projects/lunarkaiorg/lunarkai/dist/src/core/tokens/tokens.js:93:36\n\n  90     : costBreakdown;\n  91 existingBreakdown.push(newBreakdown);\n  92 await prisma_1.default.$transaction([\n→ 93     prisma_1.default.usage.upsert(\nUnique constraint failed on the fields: (`userId`,`chatId`)"
+[2025-01-27T13:15:23.216Z] info "Usage already recorded, continuing with intent recognition"
+[2025-01-27T14:15:58.956Z] intentCostBreakdown {"type":"intent","promptTokens":1,"completionTokens":5,"cost":0.0050031500000000005}
+[2025-01-27T14:15:59.447Z] error "Intent recognition error: \nInvalid `prisma_1.default.usage.upsert()` invocation in\n/Users/pzzaworks/Projects/lunarkaiorg/lunarkai/dist/src/core/tokens/tokens.js:93:36\n\n  90     : costBreakdown;\n  91 existingBreakdown.push(newBreakdown);\n  92 await prisma_1.default.$transaction([\n→ 93     prisma_1.default.usage.upsert(\nUnique constraint failed on the fields: (`userId`,`chatId`)"
+[2025-01-27T14:15:59.448Z] info "Usage already recorded, continuing with intent recognition"
+[2025-01-27T14:16:16.807Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T14:28:24.470Z] intentCostBreakdown {"type":"intent","promptTokens":1,"completionTokens":6,"cost":0.00500375}
+[2025-01-27T14:28:24.940Z] error "Intent recognition error: \nInvalid `prisma_1.default.usage.upsert()` invocation in\n/Users/pzzaworks/Projects/lunarkaiorg/lunarkai/dist/src/core/tokens/tokens.js:93:36\n\n  90     : costBreakdown;\n  91 existingBreakdown.push(newBreakdown);\n  92 await prisma_1.default.$transaction([\n→ 93     prisma_1.default.usage.upsert(\nUnique constraint failed on the fields: (`userId`,`chatId`)"
+[2025-01-27T14:28:24.941Z] info "Usage already recorded, continuing with intent recognition"
+[2025-01-27T14:36:13.812Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T14:38:07.605Z] intentCostBreakdown {"type":"intent","promptTokens":1,"completionTokens":4,"cost":0.00500255}
+[2025-01-27T14:38:07.939Z] Usage already recorded, continuing with intent recognition
+[2025-01-27T15:12:19.601Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T15:12:29.332Z] intentCostBreakdown {"type":"intent","promptTokens":1,"completionTokens":4,"cost":0.00500255}
+[2025-01-27T15:12:29.811Z] error "Intent recognition error: \nInvalid `prisma_1.default.usage.upsert()` invocation in\n/Users/pzzaworks/Projects/lunarkaiorg/lunarkai/dist/src/core/tokens/tokens.js:93:36\n\n  90     : costBreakdown;\n  91 existingBreakdown.push(newBreakdown);\n  92 await prisma_1.default.$transaction([\n→ 93     prisma_1.default.usage.upsert(\nUnique constraint failed on the fields: (`userId`,`chatId`)"
+[2025-01-27T15:12:29.812Z] info "Usage already recorded, continuing with intent recognition"
+[2025-01-27T15:41:38.454Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T15:41:50.251Z] intentCostBreakdown {"type":"intent","promptTokens":1,"completionTokens":8,"cost":0.00500495}
+[2025-01-27T15:41:50.728Z] error "Intent recognition error: \nInvalid `prisma_1.default.usage.upsert()` invocation in\n/Users/pzzaworks/Projects/lunarkaiorg/lunarkai/dist/src/core/tokens/tokens.js:93:36\n\n  90     : costBreakdown;\n  91 existingBreakdown.push(newBreakdown);\n  92 await prisma_1.default.$transaction([\n→ 93     prisma_1.default.usage.upsert(\nUnique constraint failed on the fields: (`userId`,`chatId`)"
+[2025-01-27T15:41:50.728Z] info "Usage already recorded, continuing with intent recognition"
+[2025-01-27T16:27:11.585Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T16:28:01.073Z] intentCostBreakdown {"type":"intent","promptTokens":1,"completionTokens":4,"cost":0.00500255}
+[2025-01-27T16:30:20.316Z] intentCostBreakdown {"type":"intent","promptTokens":1,"completionTokens":9,"cost":0.00500555}
+[2025-01-27T16:30:20.668Z] error "Intent recognition error: \nInvalid `prisma_1.default.usage.upsert()` invocation in\n/Users/pzzaworks/Projects/lunarkaiorg/lunarkai/dist/src/core/tokens/tokens.js:93:36\n\n  90     : costBreakdown;\n  91 existingBreakdown.push(newBreakdown);\n  92 await prisma_1.default.$transaction([\n→ 93     prisma_1.default.usage.upsert(\nUnique constraint failed on the fields: (`userId`,`chatId`)"
+[2025-01-27T16:30:20.668Z] info "Usage already recorded, continuing with intent recognition"
+[2025-01-27T16:54:59.831Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T16:55:22.249Z] ❌ Fatal unhandled rejection: {"name":"IntentError","code":"RECOGNITION_FAILED"}
+[2025-01-27T17:05:59.183Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T17:06:35.329Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T17:10:45.344Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T17:25:13.010Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T18:44:20.387Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T18:46:26.491Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T18:47:15.626Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T18:53:24.060Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T18:54:38.384Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T18:55:54.524Z] ❌ Fatal unhandled rejection: {"name":"IntentError","code":"RECOGNITION_FAILED"}
+[2025-01-27T18:56:16.791Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T18:56:29.586Z] ❌ Fatal unhandled rejection: {"name":"IntentError","code":"RECOGNITION_FAILED"}
+[2025-01-27T19:04:58.659Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T19:07:03.286Z] ❌ Fatal unhandled rejection: {"name":"IntentError","code":"RECOGNITION_FAILED"}
+[2025-01-27T19:08:19.076Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T19:09:12.002Z] ❌ Fatal unhandled rejection: {"name":"IntentError","code":"RECOGNITION_FAILED"}
+[2025-01-27T19:09:59.685Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T19:10:59.939Z] ❌ Fatal unhandled rejection: {"name":"IntentError","code":"RECOGNITION_FAILED"}
+[2025-01-27T19:55:03.249Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T20:15:23.154Z] ❌ Fatal unhandled rejection: {"name":"IntentError","code":"RECOGNITION_FAILED"}
+[2025-01-27T20:31:52.999Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T20:34:53.724Z] 🚀 Lunark AI running on port 4545
+[2025-01-27T20:35:33.479Z] intentCostBreakdown {"type":"intent","promptTokens":40,"completionTokens":34,"cost":0.0050264}
