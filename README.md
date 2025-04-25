@@ -1,5 +1,5 @@
-<p align="left">
-  <img src="https://raw.githubusercontent.com/lunark-ai/lunark-web/main/public/images/icons/icon-light.svg" alt="Lunark AI Logo" width="120" />
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lunark-ai/lunark-web/main/public/images/icons/icon-text-light.svg" alt="Lunark AI Logo" height="120" width="500" />
 </p>
 
 Lunark AI is a TypeScript-based AI companion platform designed to provide intelligent blockchain-native assistance. Built on a modern stack with powerful LLM integration and blockchain capabilities.
